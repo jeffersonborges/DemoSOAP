@@ -19,11 +19,49 @@
         android:layout_height="wrap_content"
         android:hint="Número 2" />
 
-    <Button
-        android:id="@+id/btSomar"
+    <Spinner
+        android:entries="@array/operacoes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="somar" />
+        android:id="@+id/spOperacoes">
+
+    </Spinner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btSomar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="somar" />
+
+        <Button
+            android:id="@+id/btSubtrair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Subtrair" />
+
+        <Button
+            android:id="@+id/btMultiplicar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Multiplicar" />
+
+        <Button
+            android:id="@+id/btDividir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dividir" />
+
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/tvResultado"
@@ -32,5 +70,11 @@
         android:gravity="center_horizontal"
         android:text="0"
         android:textSize="100dp" />
+
+    <Button
+        android:id="@+id/btZerar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AC" />
 
 </LinearLayout>
