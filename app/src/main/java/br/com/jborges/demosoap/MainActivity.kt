@@ -57,6 +57,7 @@ class MainActivity : AppCompatActivity() {
         btZerar.setOnClickListener {
             etNumero1.setText("0")
             etNumero2.setText("0")
+            tvResultado.setText("0")
         }
     }
 
